@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgba(9, 9, 201, 0.925);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.contenedor h3{
+    margin-left: 450px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+/*-----------------------------------------------------------------------BODY---------------------------------------------------------*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    top: 0;
+    position: relative;
+}
+
+/*-----------------------------------cartas-----------------------------*/
+.card{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(13, 13, 216, 0.884);
+}
+
+.content{
+    width: 200px;
+    height: 200px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------FOOTER--------------------------------------------------------*/
+footer{
+    display: flex;
+    height: 120px;
+    background-color: #323232;
+    position: fixed;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .grupo-1 .box figure .mapa{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 .a{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social i{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
+
+}
